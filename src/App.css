@@ -1,0 +1,195 @@
+/* Gradient color variables */
+:root {
+  --primary-color: #ffcc00; /* Yellow */
+  --secondary-color: #ff0000; /* Red */
+  --gradient-start: #000000; /* Black */
+  --gradient-end: #333333; /* Dark gray */
+}
+
+/* General styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff; /* White text color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+/* Search bar */
+.search-bar input {
+  padding: 12px;
+  margin-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Product containers */
+.rbord,
+.rbord-pro {
+  margin: 0 auto;
+  background-color: #333; /* Dark gray background */
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Product cards */
+.product-card {
+  background-color: #444; /* Darker gray background */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product details */
+.product-image-home {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  border-radius: 15px 15px 0 0;
+}
+
+.product-title-home {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.product-price-home {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.product-description {
+  margin-bottom: 10px;
+  color: #ccc; /* Light gray text color */
+}
+
+.product-rating {
+  color: #ffcc00; /* Yellow rating color */
+  margin-bottom: 10px;
+}
+
+/* Logout button */
+.logout-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Login and register containers */
+.login-container,
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end));
+}
+
+.login-container h1,
+.register-container h1 {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+/* Input fields */
+.login-container input,
+.register-container input {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container input:focus,
+.register-container input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Buttons */
+.login-container button,
+.register-container button {
+  padding: 15px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+  background-color: #ff6600; /* Darker orange on hover */
+}
+
+/* Form labels */
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+/* Auth container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
